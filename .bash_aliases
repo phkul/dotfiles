@@ -18,6 +18,7 @@ alias r="ranger"
 
 # >>> shorts <<<
 alias gm="cd /media"
+alias gd="cd ~/Documents"
 
 
 # >>> git <<<
