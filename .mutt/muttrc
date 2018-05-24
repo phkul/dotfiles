@@ -1,0 +1,21 @@
+set date_format="%m/%d %I:%M"
+
+# General remappings
+bind editor <space> noop
+bind index G last-entry
+bind index gg first-entry
+bind pager j next-line
+bind pager k previous-line
+bind pager gg top
+bind pager G bottom
+bind index d half-down
+bind index u half-up
+bind index D delete-message
+bind index U undelete-message
+bind index F search
+bind index,pager R group-reply
+macro index,pager S '<sync-mailbox>
+macro index,pager \Cu |urlview\n
+
+source ~/.mutt/muttrc.p
+source ~/.mutt/muttrc.c
