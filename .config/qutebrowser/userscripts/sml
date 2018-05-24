@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "$QUTE_URL" >> ~/SMLoadr/downloadLinks.txt

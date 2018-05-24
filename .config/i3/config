@@ -1,0 +1,217 @@
+# >>> basic definitions <<<
+font pango:mono 8
+hide_edge_borders both
+for_window [class="^.*"] border pixel 3
+gaps inner 15
+gaps outer 15
+
+
+# >>> variables <<<
+set $win 			Mod4
+set $alt 			Mod1
+set $browser 			qutebrowser 
+set $term 			urxvt
+set $music 			urxvt -e ncmpcpp
+set $mail			urxvt -e mutt
+set $shutdown			shutdown now
+set $reboot 			sudo reboot
+
+
+# >>> starting external stuff <<<
+exec --no-startup-id 		sh ~/.scripts/remaps
+exec --no-startup-id 		mpd
+exec --no-startup-id 		dunst
+exec --no-startup-id		mount -a
+
+exec --no-startup-id		redshift
+exec --no-startup-id 		sh ~/.config/scripts/screen.sh v
+
+
+#  >>> basic bindings <<<
+bindsym $win+Return 		exec $term 
+#bindsym $win+Shift+Return
+
+bindsym $win+space 		focus mode_toggle
+bindsym $win+Shift+space 	floating toggle
+
+bindsym $win+Escape		workspace prev
+bindsym $win+Shift+Escape 	exec prompt "Are you sure you want to leave i3?" "i3-msg exit"
+
+#bindsym $mod+BackSpace
+bindsym $win+Shift+BackSpace	exec prompt "Are you sure you want to reboot?" "$reboot"
+
+
+#  >>> letter key bindings <<<
+#bindsym $win+a
+#bindsym $win+Shift+a
+
+#bindsym $win+b
+bindsym $win+Shift+b		floating toggle; sticky toggle; exec --no-startup-id ~/.scripts/bottomleft
+
+#bindsym $win+c
+#bindsym $win+Shift+c
+
+bindsym $win+d			exec --no-startup-id dmenu_run
+bindsym $win+Shift+d		gaps inner current set 0; gaps outer current set 0
+
+#bindsym $win+e
+#bindsym $win+Shift+e
+
+bindsym $win+f 			fullscreen toggle
+#bindsym $win+Shift+f
+
+#bindsym $win+g
+#bindsym $win+Shift+g
+
+bindsym $win+h			focus left
+bindsym $win+Shift+h		move left 30
+
+#bindsym $win+i
+bindsym $win+Shift+i		resize grow height 10 px or 10 ppt
+
+bindsym $win+j			focus down
+bindsym $win+Shift+j		move down 30
+
+bindsym $win+k			focus up
+bindsym $win+Shift+k		move up 30
+
+bindsym $win+l			focus right
+bindsym $win+Shift+l		move right 30
+
+bindsym $win+m 			exec $music
+bindsym $win+Shift+m		exec $mail	
+
+bindsym $win+n			exec $term -e newsboat
+#bindsym $win+Shift+n
+
+bindsym $win+o			exec libreoffice
+bindsym $win+Shift+o		resize grow width 10 px or 10 ppt
+
+bindsym $win+p			exec $pause
+#bindsym $win+Shift+p
+
+bindsym $win+q 			kill
+bindsym $win+Shift+q 		kill
+
+bindsym $win+r			exec $term -e ranger
+#bindsym $win+Shift+r
+
+bindsym $win+s			gaps inner current plus 5
+bindsym $win+Shift+s		gaps inner current minus 5
+
+bindsym $win+t			split toggle
+bindsym $win+Shift+t		gaps inner current set 15; gaps outer current set 15
+
+bindsym $win+u			[instance="dropdown"] scratchpad show; [instance="dropdown"] move position center 
+#bindsym $win+Shift+u			 
+
+#bindsym $win+v
+#bindsym $win+Shift+v
+
+#bindsym $win+w
+bindsym $win+Shift+w		exec $browser
+
+#bindsym $win+x
+bindsym $win+Shift+x		exec prompt "Are you sure you want to shutdown?" "$shutdown"
+
+#bindsym $win+y
+#bindsym $win+Shift+y
+
+bindsym $win+z			exec $term -e calcurse
+bindsym $win+Shift+z		resize shrink width 10 px or 10ppt
+
+
+# Volume keys
+bindsym $win+up			exec $inc
+bindsym $win+Shift+up		exec $biginc
+bindsym $win+down 		exec $dec
+bindsym $win+Shift+down		exec $bigdec
+bindsym $win+less 		exec $prev
+bindsym $win+Shift+less		exec $beg
+bindsym $win+greater		exec $next
+bindsym $win+Shift+greater	exec $next
+
+
+# >>> function buttons <<<
+#bindsym $win+F1
+bindsym $win+F2		restart
+#bindsym $win+F3
+#bindsym $win+F4
+#bindsym $win+F5
+#bindsym $win+F6
+#bindsym $win+F7
+#bindsym $win+F8
+bindsym $win+F9		exec --no-startup-id ~/.scripts/dmenumount
+bindsym $win+F10	exec --no-startup-id ~/.scripts/dmenuumount
+#bindsym $win+F11
+#bindsym $win+F12
+
+
+# >>> dropdown terminal <<<
+for_window [instance="dropdown"] floating enable
+for_window [instance="dropdown"] resize set 625 400
+for_window [instance="dropdown"] move scratchpad
+for_window [instance="dropdown"] border pixel 5
+exec --no-startup-id $term --name dropdown
+
+
+# switch to workspace
+bindsym $win+1 workspace 1
+bindsym $win+2 workspace 2
+bindsym $win+3 workspace 3
+bindsym $win+4 workspace 4
+bindsym $win+5 workspace 5
+bindsym $win+6 workspace 6
+bindsym $win+7 workspace 7
+bindsym $win+8 workspace 8
+bindsym $win+9 workspace 9
+bindsym $win+0 workspace 10
+
+
+# move focused container to workspace
+bindsym $win+Shift+1 move container to workspace 1
+bindsym $win+Shift+2 move container to workspace 2
+bindsym $win+Shift+3 move container to workspace 3
+bindsym $win+Shift+4 move container to workspace 4
+bindsym $win+Shift+5 move container to workspace 5
+bindsym $win+Shift+6 move container to workspace 6
+bindsym $win+Shift+7 move container to workspace 7
+bindsym $win+Shift+8 move container to workspace 8
+bindsym $win+Shift+9 move container to workspace 9
+bindsym $win+Shift+0 move container to workspace 10
+
+
+#bar {
+#        status_command i3status
+#	position top
+#}
+
+bar {
+status_command py3status -c ~/.i3blocks.conf
+position top
+}
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume	exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume 	exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute 		exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+
+set $pause --no-startup-id mpc toggle
+set $trupause --no-startup-id mpc pause
+set $next --no-startup-id mpc next
+set $prev --no-startup-id mpc prev
+set $lilfor --no-startup-id mpc seek +10
+set $bigfor --no-startup-id mpc seek +120
+set $lilbak --no-startup-id mpc seek -10
+set $bigbak --no-startup-id mpc seek -120
+set $beg --no-startup-id mpc seek 0%
+
+set $inc --no-startup-id amixer sset Master 2%+
+set $biginc --no-startup-id amixer sset Master 5%+
+set $dec --no-startup-id amixer sset Master 2%-
+set $bigdec --no-startup-id amixer sset Master 5%-
+set $mute --no-startup-id amixer sset Master toggle
+set $truemute --no-startup-id amixer sset Master mute
+
+# vim:filetype=i3

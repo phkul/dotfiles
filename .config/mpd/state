@@ -1,0 +1,54 @@
+sw_volume: 86
+audio_device_state:1:mpd alsamixer-output
+audio_device_state:1:toggle_visualizer
+state: pause
+current: 0
+time: 2.321000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 1
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Mord in Serie/25 - Todesjagd - Freelancer 2.0/01 Folge 25 Todesjagd - Freelancer 2.0 Teil 1.mp3
+1:Mord in Serie/25 - Todesjagd - Freelancer 2.0/02 Folge 25 Todesjagd - Freelancer 2.0 Teil 2.mp3
+2:Mord in Serie/25 - Todesjagd - Freelancer 2.0/03 Folge 25 Todesjagd - Freelancer 2.0 Teil 3.mp3
+3:Mord in Serie/25 - Todesjagd - Freelancer 2.0/04 Folge 25 Todesjagd - Freelancer 2.0 Teil 4.mp3
+4:Mord in Serie/25 - Todesjagd - Freelancer 2.0/05 Folge 25 Todesjagd - Freelancer 2.0 Teil 5.mp3
+5:Mord in Serie/25 - Todesjagd - Freelancer 2.0/06 Folge 25 Todesjagd - Freelancer 2.0 Teil 6.mp3
+6:Mord in Serie/25 - Todesjagd - Freelancer 2.0/07 Folge 25 Todesjagd - Freelancer 2.0 Teil 7.mp3
+7:Mord in Serie/25 - Todesjagd - Freelancer 2.0/08 Folge 25 Todesjagd - Freelancer 2.0 Teil 8.mp3
+8:Mord in Serie/25 - Todesjagd - Freelancer 2.0/09 Folge 25 Todesjagd - Freelancer 2.0 Teil 9.mp3
+9:Mord in Serie/25 - Todesjagd - Freelancer 2.0/10 Folge 25 Todesjagd - Freelancer 2.0 Teil 10.mp3
+10:Mord in Serie/25 - Todesjagd - Freelancer 2.0/11 Folge 25 Todesjagd - Freelancer 2.0 Teil 11.mp3
+11:Mord in Serie/25 - Todesjagd - Freelancer 2.0/12 Folge 25 Todesjagd - Freelancer 2.0 Teil 12.mp3
+12:Mord in Serie/25 - Todesjagd - Freelancer 2.0/13 Folge 25 Todesjagd - Freelancer 2.0 Teil 13.mp3
+13:Mord in Serie/25 - Todesjagd - Freelancer 2.0/14 Folge 25 Todesjagd - Freelancer 2.0 Teil 14.mp3
+14:Mord in Serie/25 - Todesjagd - Freelancer 2.0/15 Folge 25 Todesjagd - Freelancer 2.0 Teil 15.mp3
+15:Mord in Serie/25 - Todesjagd - Freelancer 2.0/16 Folge 25 Todesjagd - Freelancer 2.0 Teil 16.mp3
+16:Mord in Serie/25 - Todesjagd - Freelancer 2.0/17 Folge 25 Todesjagd - Freelancer 2.0 Teil 17.mp3
+17:Mord in Serie/25 - Todesjagd - Freelancer 2.0/18 Folge 25 Todesjagd - Freelancer 2.0 Teil 18.mp3
+18:Mord in Serie/25 - Todesjagd - Freelancer 2.0/19 Folge 25 Todesjagd - Freelancer 2.0 Teil 19.mp3
+19:Mord in Serie/25 - Todesjagd - Freelancer 2.0/20 Folge 25 Todesjagd - Freelancer 2.0 Teil 20.mp3
+20:Mord in Serie/25 - Todesjagd - Freelancer 2.0/21 Folge 25 Todesjagd - Freelancer 2.0 Teil 21.mp3
+21:Mord in Serie/25 - Todesjagd - Freelancer 2.0/22 Folge 25 Todesjagd - Freelancer 2.0 Teil 22.mp3
+22:Mord in Serie/25 - Todesjagd - Freelancer 2.0/23 Folge 25 Todesjagd - Freelancer 2.0 Teil 23.mp3
+23:Mord in Serie/25 - Todesjagd - Freelancer 2.0/24 Folge 25 Todesjagd - Freelancer 2.0 Teil 24.mp3
+24:Mord in Serie/25 - Todesjagd - Freelancer 2.0/25 Folge 25 Todesjagd - Freelancer 2.0 Teil 25.mp3
+25:Mord in Serie/25 - Todesjagd - Freelancer 2.0/26 Folge 25 Todesjagd - Freelancer 2.0 Teil 26.mp3
+26:Mord in Serie/25 - Todesjagd - Freelancer 2.0/27 Folge 25 Todesjagd - Freelancer 2.0 Teil 27.mp3
+27:Mord in Serie/25 - Todesjagd - Freelancer 2.0/28 Folge 25 Todesjagd - Freelancer 2.0 Teil 28.mp3
+28:Mord in Serie/25 - Todesjagd - Freelancer 2.0/29 Folge 25 Todesjagd - Freelancer 2.0 Teil 29.mp3
+29:Mord in Serie/25 - Todesjagd - Freelancer 2.0/30 Folge 25 Todesjagd - Freelancer 2.0 Teil 30.mp3
+30:Mord in Serie/25 - Todesjagd - Freelancer 2.0/31 Folge 25 Todesjagd - Freelancer 2.0 Teil 31.mp3
+31:Mord in Serie/25 - Todesjagd - Freelancer 2.0/32 Folge 25 Todesjagd - Freelancer 2.0 Teil 32.mp3
+32:Mord in Serie/25 - Todesjagd - Freelancer 2.0/33 Folge 25 Todesjagd - Freelancer 2.0 Teil 33.mp3
+33:Mord in Serie/25 - Todesjagd - Freelancer 2.0/34 Folge 25 Todesjagd - Freelancer 2.0 Teil 34.mp3
+34:Mord in Serie/25 - Todesjagd - Freelancer 2.0/35 Folge 25 Todesjagd - Freelancer 2.0 Teil 35.mp3
+35:Mord in Serie/25 - Todesjagd - Freelancer 2.0/36 Folge 25 Todesjagd - Freelancer 2.0 Teil 36.mp3
+36:Mord in Serie/25 - Todesjagd - Freelancer 2.0/37 Folge 25 Todesjagd - Freelancer 2.0 Teil 37.mp3
+37:Mord in Serie/25 - Todesjagd - Freelancer 2.0/38 Folge 25 Todesjagd - Freelancer 2.0 Teil 38.mp3
+38:Mord in Serie/25 - Todesjagd - Freelancer 2.0/39 Folge 25 Todesjagd - Freelancer 2.0 Teil 39.mp3
+playlist_end
