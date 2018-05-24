@@ -187,7 +187,7 @@ bindsym $win+Shift+0 move container to workspace 10
 #}
 
 bar {
-status_command py3status -c ~/.i3blocks.conf
+status_command py3status -c ~/.config/i3/i3blocks.conf
 position top
 }
 
